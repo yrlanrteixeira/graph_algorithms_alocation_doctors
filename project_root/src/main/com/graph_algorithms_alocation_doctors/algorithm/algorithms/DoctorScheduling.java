@@ -9,7 +9,7 @@ public class DoctorScheduling {
         int source = V - 2;
         int sink = V - 1;
 
-        main.com.graph_algorithms_alocation_doctors.algorithm.algorithms.MaxFlow maxFlow = new main.com.graph_algorithms_alocation_doctors.algorithm.algorithms.MaxFlow(V);
+        MaxFlow maxFlow = new MaxFlow(V);
 
         for (int i = 0; i < n; i++) {
             maxFlow.addEdge(source, i, c);

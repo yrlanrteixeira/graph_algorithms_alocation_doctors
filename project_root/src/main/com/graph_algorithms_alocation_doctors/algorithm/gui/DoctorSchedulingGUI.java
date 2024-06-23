@@ -1,6 +1,6 @@
-package main.com.graph_algorithms_alocation_doctors.algorithm.gui;
+package src.main.com.graph_algorithms_alocation_doctors.algorithm.gui;
 
-import main.com.graph_algorithms_alocation_doctors.algorithm.algorithms.DoctorScheduling;
+import src.main.com.graph_algorithms_alocation_doctors.algorithm.algorithms.DoctorScheduling;
 
 import javax.swing.*;
 import java.awt.*;
