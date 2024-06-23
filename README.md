@@ -42,7 +42,7 @@ O objetivo deste projeto é resolver o problema de alocação de médicos durant
 
 2. Execute a aplicação:
   
-   Com a sua IDE favorita execute o arquivo 'Main.java' e ele irá aparecer as instruções no terminal.
+   Com a sua IDE favorita execute o arquivo 'main.java.com.doctorswithoutweekends.Main.java' e ele irá aparecer as instruções no terminal.
 
 ## Instruções de Uso
 
