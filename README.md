@@ -29,7 +29,7 @@ O objetivo deste projeto é resolver o problema de alocação de médicos durant
 
 ### Pré-requisitos
 
-- Java JDK 11 ou superior
+- Java JDK 22
 
 ### Passos para Configuração
 
