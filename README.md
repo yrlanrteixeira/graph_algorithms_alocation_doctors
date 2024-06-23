@@ -9,9 +9,7 @@ Este projeto é uma aplicação de alocação de médicos usando algoritmos de g
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
 - [Configuração do Ambiente](#configuração-do-ambiente)
 - [Instruções de Uso](#instruções-de-uso)
-- [Estrutura do Projeto](#estrutura-do-projeto)
 - [Exemplos de Entrada e Saída](#exemplos-de-entrada-e-saída)
-- [Licença](#licença)
 
 ## Visão Geral
 
