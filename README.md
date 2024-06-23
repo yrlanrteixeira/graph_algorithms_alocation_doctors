@@ -90,8 +90,9 @@ O programa irá pedir que você indique algumas informações para que ele possa
 **SAÍDA:**
 
 É possível realizar a seguinte atribuição de médicos:
-Médico 1 ao dia 1 (Período 1)
-Médico 1 ao dia 2 (Período 1)
-Médico 2 ao dia 3 (Período 2)
-Médico 2 ao dia 4 (Período 2)
+
+- Médico 1 ao dia 1 (Período 1)
+- Médico 1 ao dia 2 (Período 1)
+- Médico 2 ao dia 3 (Período 2)
+- Médico 2 ao dia 4 (Período 2)
 
