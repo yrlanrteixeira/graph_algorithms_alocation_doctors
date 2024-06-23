@@ -1,7 +1,11 @@
+package main.java.com.doctorswithoutweekends;
+
+import main.java.com.doctorswithoutweekends.algorithm.EdmondsKarp;
+
 import java.util.*;
 
 /**
- * Classe Main que executa o programa.
+ * Classe main.java.com.doctorswithoutweekends.Main que executa o programa.
  */
 public class Main {
     /**

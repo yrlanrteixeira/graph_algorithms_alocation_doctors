@@ -1,7 +1,11 @@
+package main.java.com.doctorswithoutweekends.algorithm;
+
+import main.java.com.doctorswithoutweekends.network.FlowNetwork;
+
 import java.util.*;
 
 /**
- * Classe EdmondsKarp que implementa o algoritmo de Edmonds-Karp para encontrar o fluxo máximo em um grafo de fluxo.
+ * Classe main.java.com.doctorswithoutweekends.algorithm.EdmondsKarp que implementa o algoritmo de Edmonds-Karp para encontrar o fluxo máximo em um grafo de fluxo.
  */
 public class EdmondsKarp {
     /**
@@ -75,7 +79,7 @@ public class EdmondsKarp {
      * @param vacationPeriods um mapa de períodos de férias para seus dias
      * @param c o número máximo de dias de férias que um médico pode trabalhar
      */
-    static void assignDoctors(Map<Integer, Set<Integer>> doctors, Map<Integer, Set<Integer>> vacationPeriods, int c) {
+    public static void assignDoctors(Map<Integer, Set<Integer>> doctors, Map<Integer, Set<Integer>> vacationPeriods, int c) {
         int source = 0;
         int numDoctors = doctors.size();
         int numDays = vacationPeriods.values().stream().mapToInt(Set::size).sum();

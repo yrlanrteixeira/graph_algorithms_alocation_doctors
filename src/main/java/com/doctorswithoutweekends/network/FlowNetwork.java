@@ -1,17 +1,21 @@
+package main.java.com.doctorswithoutweekends.network;
+
+import main.java.com.doctorswithoutweekends.algorithm.Edge;
+
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Classe FlowNetwork que representa um grafo de fluxo.
+ * Classe main.java.com.doctorswithoutweekends.network.FlowNetwork que representa um grafo de fluxo.
  */
 public class FlowNetwork {
-    List<List<Edge>> adjList;
+    public List<List<Edge>> adjList;
 
     /**
-     * Construtor para a classe FlowNetwork.
+     * Construtor para a classe main.java.com.doctorswithoutweekends.network.FlowNetwork.
      * @param numNodes o número de nós no grafo
      */
-    FlowNetwork(int numNodes){
+    public FlowNetwork(int numNodes){
         adjList = new ArrayList<>(numNodes);
         for(int i = 0; i < numNodes; i++){
             adjList.add(new ArrayList<>());
@@ -24,7 +28,7 @@ public class FlowNetwork {
      * @param to o nó de destino da aresta
      * @param capacity a capacidade da aresta
      */
-    void addEdge(int from, int to, int capacity){
+    public void addEdge(int from, int to, int capacity){
         Edge foward = new Edge(to, capacity);
         Edge reverse = new Edge(from, 0);
         foward.reverseEdge = reverse;
@@ -38,7 +42,7 @@ public class FlowNetwork {
      * @param node o nó para o qual obter as arestas
      * @return uma lista de arestas do nó
      */
-    List<Edge> getEdges(int node){
+    public List<Edge> getEdges(int node){
         return adjList.get(node);
     }
 }
