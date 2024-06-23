@@ -21,21 +21,17 @@ O objetivo deste projeto é resolver o problema de alocação de médicos durant
 
 - Alocação de médicos para períodos de férias com base em suas disponibilidades.
 - Respeito às restrições de dias máximos de trabalho por médico.
-- Interface gráfica para entrada de dados e visualização dos resultados.
-- Algoritmo eficiente baseado em fluxos em rede.
+- Algoritmo eficiente baseado em fluxos em rede (Edmond-Karp).
 
 ## Tecnologias Utilizadas
 
 - Java
-- Swing (para a interface gráfica)
-- Maven (para gerenciamento de dependências)
 
 ## Configuração do Ambiente
 
 ### Pré-requisitos
 
 - Java JDK 11 ou superior
-- Maven
 
 ### Passos para Configuração
 
@@ -46,49 +42,56 @@ O objetivo deste projeto é resolver o problema de alocação de médicos durant
    cd graph_algorithms_alocation_doctors
 
 
-2. Configure o projeto com Maven:
-
-   ```bash
-   mvn clean install
-   ```
-
-3. Execute a aplicação:
+2. Execute a aplicação:
   
-   ```bash
-   mvn exec:java
-   ```
+   Com a sua IDE favorita execute o arquivo 'Main.java' e ele irá aparecer as instruções no terminal.
 
 ## Instruções de Uso
 
-### Interface Gráfica
+### Interface de Uso
 
-1. **Número de Médicos:** Insira o número total de médicos.
-2. **Número de Períodos de Férias:** Insira o número total de períodos de férias.
-3. **Máximo de Dias de Férias por Médico:** Insira o número máximo de dias de férias que cada médico pode trabalhar.
-4. Clique em "Adicionar Períodos de Férias" para gerar campos de entrada para os períodos de férias.
-5. Insira os dias de cada período de férias nos campos gerados.
-6. Clique em "Adicionar Disponibilidade dos Médicos" para gerar campos de entrada para a disponibilidade dos médicos.
-7. Insira os dias de disponibilidade de cada médico nos campos gerados.
-8. Clique em "Processar" para calcular e exibir a alocação dos médicos.
+O programa irá pedir que você indique algumas informações para que ele possa realizar a associação dos médicos com os dias disponíveis, dentre as informações pedidas estão:
 
+1. **Número de Médicos:** Insira o número (inteiro) total de médicos (Exemplo: 3).
+2. **Número de dias disponíveis para o médico X:** Insira o número de dias disponíveis que o médico X tem (Exemplo: 3).
+3. **Dias disponíveis para o médico X:** Insira os dias que o médico X tem disponibilidade (Os dias devem ser separados por espaço. Exemplo: 1 2 3).
+4. **Número de período de férias:** Insira a quantidade de periodo de férias que o hospital terá (Exemplo: 2).
+5. **Números de dias de férias do periodo X:** Insira a quantidade de dias que o periodo de férias X terá (Exemplo: 2).
+6. **Dias do período de férias X:** Insira os dias pertencentes ao periodo de férias X (Os dias devem ser separados por espaço. Exemplo: 1 2 3).
+7. **Número máximo de dias de férias que um médico pode trabalhar:** Insira o número máximo de dias que um médico pode trabalhar (Exemplo: 2).
 
 ## Exemplos de Entrada e Saída
 
-### Exemplo 1
+### Exemplo
 
-**Entrada:**
+**ENTRADA:**
 - Número de Médicos: 3
+   - Médico 1:
+      - Número de dias: 3
+      - Dias disponíveis: 1 2 3
+   - Médico 2:
+      - Número de dias: 3
+      - Dias disponíveis: 2 3 4
+   - Médico 3:
+      - Número de dias: 2
+      - Dias disponíveis: 1 4
+         
 - Número de Períodos de Férias: 2
+   - Período 1:
+      - Número de dias: 2
+      - Dias disponíveis: 1 2
+    
+   - Período 2:
+      - Número de dias: 2
+      - Dias disponíveis: 3 4
+       
 - Máximo de Dias de Férias por Médico: 2
 
-**Períodos de Férias:**
-- Período 1: 1 2 3
-- Período 2: 4 5
+**SAÍDA:**
 
-**Disponibilidade dos Médicos:**
-- Médico 1: 1 2 4
-- Médico 2: 2 3 5
-- Médico 3: 1 5
+É possível realizar a seguinte atribuição de médicos:
+Médico 1 ao dia 1 (Período 1)
+Médico 1 ao dia 2 (Período 1)
+Médico 2 ao dia 3 (Período 2)
+Médico 2 ao dia 4 (Período 2)
 
-**Saída:**
-É possível selecionar um médico para cada dia de férias.
