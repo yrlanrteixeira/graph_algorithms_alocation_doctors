@@ -1,6 +1,4 @@
-package src.main.java.com.graph_algorithms_alocation_doctors.algorithm;
-
-import src.main.java.com.graph_algorithms_alocation_doctors.algorithm.MaxFlow;
+package main.com.graph_algorithms_alocation_doctors.algorithm.algorithms;
 
 import java.util.*;
 
