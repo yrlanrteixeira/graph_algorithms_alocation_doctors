@@ -1,4 +1,4 @@
-package main.com.graph_algorithms_alocation_doctors.algorithm.algorithms;
+package src.main.com.graph_algorithms_alocation_doctors.algorithm.algorithms;
 
 import java.util.*;
 
